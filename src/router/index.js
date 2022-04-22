@@ -14,7 +14,7 @@ import {
 
 function RouterApp() {
   const CLIENT_ID = "babf1f9589744064b2546cc8927930c9";
-  const REDIRECT_URI = "http://localhost:3000";
+  const REDIRECT_URI = "https://hxney-music.vercel.app/";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const SCOPE = "playlist-modify-private";
   const RESPONSE_TYPE = "token";
