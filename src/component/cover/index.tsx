@@ -1,6 +1,13 @@
 import React from "react";
 
-const Cover = ({ title, artists, images, total_tracks }) => {
+type Props = {
+  title: string;
+  artists: string;
+  images: string;
+  total_tracks: string;
+};
+
+const Cover = ({ title, artists, images, total_tracks }: Props) => {
   return (
     <div className="">
       <div className="">

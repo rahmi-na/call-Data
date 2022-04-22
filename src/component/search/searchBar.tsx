@@ -1,7 +1,12 @@
 import React from "react";
 import { Input } from "@chakra-ui/react";
 
-const SearchBar = ({ submit, change }) => {
+type Props = {
+  submit: (e: React.FormEvent<HTMLFormElement>) => void;
+  change: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+const SearchBar = ({ submit, change }: Props) => {
   return (
     <form onSubmit={submit}>
       <div className="ml-2 mr-2">

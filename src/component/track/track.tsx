@@ -1,6 +1,6 @@
 import React from "react";
 
-function Track({ items }) {
+function Track({ items }: any) {
   return (
     <div>
       <div className="p-4">

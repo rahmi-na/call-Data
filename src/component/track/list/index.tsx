@@ -1,7 +1,23 @@
 import React from "react";
 import { Button, Image } from "@chakra-ui/react";
 
-const List = ({ title, artists, album, image, buttonSelect, textSelect }) => {
+type Props = {
+  title: string;
+  artists: string;
+  album: string;
+  image: string;
+  buttonSelect: () => void;
+  textSelect: boolean;
+};
+
+const List = ({
+  title,
+  artists,
+  album,
+  image,
+  buttonSelect,
+  textSelect,
+}: Props) => {
   const setSelect = () => {
     buttonSelect();
   };

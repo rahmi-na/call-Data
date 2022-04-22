@@ -10,6 +10,7 @@ it("Success rendered", async () => {
       key={data.id}
       title={data.name}
       artists={data.artists[0].name}
+      album={data.album.name}
       image={data.album.images[0].url}
       buttonSelect={setSelect}
       select={true}
