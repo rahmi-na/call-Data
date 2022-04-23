@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# hxney-music
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+hxney-music is an application that can search songs and create playlists connected to the spotify application
+
+## 
+
+![This is an image](assets/img/music-2.ong)
+
 
 ## Available Scripts
 
