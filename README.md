@@ -61,8 +61,9 @@ Set up your spofity id KEY_API_ID at .env file
 ### Step 6 Run an App
 One the dependencies are installed, you can run the app for a lesson
 
-``` yarn start
-# or
+``` 
+yarn start
+or
 npm start 
 ```
 
