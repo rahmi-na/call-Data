@@ -41,20 +41,24 @@ Please install them if you don't have them already.
 ### Step 2 - Clone the repository
 From the command line, clone the repository
 
+``` 
+$ git clone https://github.com/rahmi-na/call-Data.git
 ```
-$ git clone https://github.com/rahmi-na/call-Data.git```
 
 ### Step 3 - Install Each Lesson
 if you are using yarn, run from the root of the repository
 
-```yarn```
+```yarn
+```
 
 If you are using npm, run from the root the repository
 
-```npm run install```
+```npm run install
+```
 
 ### Step 4 - Go to directory
-```cd call-Data```
+```cd call-Data
+```
 
 ### Step 5 - Set up spotify id
 Set up your spofity id KEY_API_ID at .env file
@@ -62,8 +66,7 @@ Set up your spofity id KEY_API_ID at .env file
 ### Step 6 Run an App
 One the dependencies are installed, you can run the app for a lesson
 
-``` 
-yarn start
+``` yarn start
 or
 npm start 
 ```
