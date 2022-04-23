@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../component/navbar";
 import Search from "../component/search";
 import Login from "../pages/landingPage";
+import axios from "axios";
 import { Button } from "@chakra-ui/react";
 import { useSelector, useDispatch } from "react-redux";
 import { setToken, removeToken } from "../redux/auth";
+import { CURRENT_USER_PROFILE } from "../config/url";
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +22,7 @@ function RouterApp() {
   const RESPONSE_TYPE = "token";
 
   const dispatch = useDispatch();
+  const [user, setUser] = useState([]);
   let { token } = useSelector((state) => state.auth);
 
   useEffect(() => {
@@ -44,6 +47,21 @@ function RouterApp() {
     window.localStorage.removeItem("token");
   };
 
+  useEffect(() => {
+    if (token !== null) {
+      setUserProfile(token);
+    }
+  }, [token]);
+
+  const setUserProfile = async (token) => {
+    const { data } = await axios.get(CURRENT_USER_PROFILE, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    setUser(data);
+  };
+
   return (
     <Router>
       <div className="">
@@ -59,22 +77,28 @@ function RouterApp() {
                     _active={{ bg: "#1ed760" }}
                   >
                     <a
-                      className="text-white text-decoration-none"
+                      className="text-white text-decoration-none login"
                       href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`}
                     >
                       Login
                     </a>
                   </Button>
                 ) : (
-                  <Button
-                    bg="#1ed760"
-                    color="white"
-                    _hover={{ bg: "#1ed760" }}
-                    _active={{ bg: "#1ed760" }}
-                    onClick={logout}
-                  >
-                    Logout
-                  </Button>
+                  <div className="justify-content-center displayName">
+                    <span className="text-white fw-bold px-2 mt-2">
+                      {user.display_name}
+                    </span>
+                    <Button
+                      bg="#1ed760"
+                      color="white"
+                      _hover={{ bg: "#1ed760" }}
+                      _active={{ bg: "#1ed760" }}
+                      onClick={logout}
+                      className="ml-3"
+                    >
+                      Logout
+                    </Button>
+                  </div>
                 )
               }
             />

@@ -21,10 +21,17 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 20px;
+  justify-content: center;
 }
 
 .btn-search {
   border: 1px solid #ccc;
+}
+
+.displayName {
+  display: flex;
+  justify-content: center;
+  top: 20px;
 }
 
 @media screen and (max-width: 768px) {

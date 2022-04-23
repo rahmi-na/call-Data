@@ -15,6 +15,7 @@ const CreatePlaylist = ({ title, description, submit }: Props) => {
         <Button
           bg="#1ed760"
           color="white"
+          type="button"
           _hover={{ bg: "#1ed760" }}
           _active={{ bg: "#1ed760" }}
           onClick={() => setShowModal(true)}
@@ -60,10 +61,11 @@ const CreatePlaylist = ({ title, description, submit }: Props) => {
                   <div className="p-3 ml-4 mb-2 flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                     <ButtonGroup variant="outline" spacing="4" ml={5}>
                       <Button
-                        onClick={() => setShowModal(false)}
+                        type="button"
                         _focus={{
                           outline: "none",
                         }}
+                        onClick={() => setShowModal(false)}
                       >
                         Cancel
                       </Button>

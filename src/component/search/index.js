@@ -72,6 +72,7 @@ function Search() {
       console.log(error);
     }
   };
+
   const addSongsToPlaylist = async (playlist_id) => {
     try {
       const response = await axios.post(
@@ -108,7 +109,7 @@ function Search() {
   const handleCreatePlaylist = async (e) => {
     e.preventDefault();
     try {
-      const id = user;
+      const id = user.id;
       const playlistId = await createPlaylist(id);
       if (playlistId) {
         const response = await addSongsToPlaylist(playlistId);
@@ -156,7 +157,6 @@ function Search() {
   return (
     <div>
       <div className="">
-        <h5 className="text-white py-6 ml-4">Hi, {user.display_name}</h5>
         {token ? (
           <div className="">
             <SearchBar
