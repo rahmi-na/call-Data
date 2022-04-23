@@ -25,7 +25,15 @@ body {
 }
 
 .btn-search {
-  border: 1px solid #ccc;
+  background-color: #1ed760;
+}
+
+.btn-search:hover {
+  background-color: #1ed760;
+}
+
+.btn-search:active {
+  background-color: #1ed760;
 }
 
 .displayName {
@@ -39,8 +47,12 @@ body {
     width: 100%;
   }
 
+  .btn-search {
+    width: 100%;
+  }
+
   .logo-spotify {
-    width: 10%;
+    width: 20%;
   }
 
   .grid-column-song {

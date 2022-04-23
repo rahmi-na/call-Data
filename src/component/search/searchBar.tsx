@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Input } from "@chakra-ui/react";
+import { Input } from "@chakra-ui/react";
 
 type Props = {
   submit: (e: React.FormEvent<HTMLFormElement>) => void;
@@ -11,25 +11,21 @@ const SearchBar = ({ submit, change }: Props) => {
     <form onSubmit={submit}>
       <div className="ml-2 mr-2">
         <div className="p-2">
-          <button className="btn-search ml-1"></button>
           <Input
             type="text"
             bg="white"
+            className="mb-2 mr-2"
             placeholder="Search for artist or songs"
             width={{ base: "100%", sm: "50%", md: "30%" }}
             data-testid="search-input"
             onChange={change}
           />
-          <Button
-            bg="#1ed760"
-            color="white"
-            className="mb-1 ml-2"
-            _hover={{ bg: "#1ed760" }}
-            _active={{ bg: "#1ed760" }}
+          <button
+            className="mb-1 text-white btn btn-search"
             data-testid="search-button"
           >
             Search
-          </Button>
+          </button>
         </div>
       </div>
     </form>
