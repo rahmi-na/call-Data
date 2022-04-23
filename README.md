@@ -63,7 +63,8 @@ One the dependencies are installed, you can run the app for a lesson
 
 ``` yarn start
 # or
-npm start ```
+npm start 
+```
 
 ## Live Application URL
 [deployment](https://hxney-music.vercel.app/)
