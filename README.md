@@ -2,52 +2,65 @@
 
 hxney-music is an application that can search songs and create playlists connected to the spotify application
 
-## 
+## Features
+1. ![music-1](https://user-images.githubusercontent.com/79822759/164893452-6cbc45c1-2db6-4f8e-9cf2-f4fa55e2e209.png)
 
-![music-1](https://user-images.githubusercontent.com/79822759/164893452-6cbc45c1-2db6-4f8e-9cf2-f4fa55e2e209.png)
+2. ![music-2](https://user-images.githubusercontent.com/79822759/164893456-2be6eeb3-0b5c-45e2-84ef-fe776e6868cd.png)
 
-![music-2](https://user-images.githubusercontent.com/79822759/164893456-2be6eeb3-0b5c-45e2-84ef-fe776e6868cd.png)
+3. ![music-3](https://user-images.githubusercontent.com/79822759/164893458-d121d7bd-6992-47d7-9478-bb3a13e67638.png)
 
-![music-3](https://user-images.githubusercontent.com/79822759/164893458-d121d7bd-6992-47d7-9478-bb3a13e67638.png)
+4. ![music-4](https://user-images.githubusercontent.com/79822759/164893463-457ce9e9-810d-44ab-b4df-8ba5c1ee4bb2.png)
 
-![music-4](https://user-images.githubusercontent.com/79822759/164893463-457ce9e9-810d-44ab-b4df-8ba5c1ee4bb2.png)
+5. ![music-5](https://user-images.githubusercontent.com/79822759/164893465-182f9e65-1067-4b0d-9e97-19f77e49d22e.png)
 
-![music-5](https://user-images.githubusercontent.com/79822759/164893465-182f9e65-1067-4b0d-9e97-19f77e49d22e.png)
+## Features
 
-## Available Scripts
+* Login with spotify account
+* Show a username profile
+* Search a song by artist or song title
+* Select songs
+* Create a playlist with selected songs
+* Logout
 
-In the project directory, you can run:
 
-### `npm start`
+## How To Install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Step 1 - Dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You will need:
+* Git
+* node
+* yard (optional, not required if you use NPM)
+Please install them if you don't have them already.
 
-### `npm test`
+# Step 2 - Clone the repository
+From the command line, clone the repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `$ git clone https://github.com/rahmi-na/call-Data.git`
 
-### `npm run build`
+# Step 3 - Install Each Lesson
+if you are using yarn, run from the root of the repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `yarn`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you are using npm, run from the root the repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run install`
 
-### `npm run eject`
+# Step 4 - Go to directory
+### `cd call-Data`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Step 5 - Set up spotify id
+Set up your spofity id KEY_API_ID at .env file
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Step 6 Run an App
+One the dependencies are installed, you can run the app for a lesson
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### yarn start
+### # or
+### npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Live Application URL
+[deployment](https://hxney-music.vercel.app/)
+This URL has the application deployed in
 
