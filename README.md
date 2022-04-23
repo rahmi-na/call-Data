@@ -2,7 +2,7 @@
 
 hxney-music is an application that can search songs and create playlists connected to the spotify application
 
-## Features
+## Display app
 1. 
 ![music-1](https://user-images.githubusercontent.com/79822759/164893452-6cbc45c1-2db6-4f8e-9cf2-f4fa55e2e209.png)
 
