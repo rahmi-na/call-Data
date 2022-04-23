@@ -41,7 +41,8 @@ Please install them if you don't have them already.
 ### Step 2 - Clone the repository
 From the command line, clone the repository
 
-```$ git clone https://github.com/rahmi-na/call-Data.git```
+```
+$ git clone https://github.com/rahmi-na/call-Data.git```
 
 ### Step 3 - Install Each Lesson
 if you are using yarn, run from the root of the repository
