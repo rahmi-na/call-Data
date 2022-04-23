@@ -4,7 +4,7 @@ hxney-music is an application that can search songs and create playlists connect
 
 ## 
 
-!(assets/img/music-2.ong)
+!(assets/img/music-2.png)
 
 
 ## Available Scripts
